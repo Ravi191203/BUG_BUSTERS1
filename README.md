@@ -1,4 +1,4 @@
-- mini Android Project by <br> Team <h1>BUG_BLUSTERS</h1>
+# Mini Android Project by <br> Team <h2>BUG_BLUSTERS</h2>
 - V RAHUL
 - TEJASWI R RAO
 - SAGAR D K
