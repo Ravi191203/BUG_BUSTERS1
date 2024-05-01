@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">BUG_BUSTERS</string>
     <string name="tab_label">Tab</string>
-
+    <string name="image_description">BUG_BUSTERS</string>
 </resources>

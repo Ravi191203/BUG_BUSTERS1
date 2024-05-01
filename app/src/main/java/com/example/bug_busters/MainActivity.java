@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
-
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -34,5 +37,28 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new ImageFragment(R.drawable.image2), "Tab 2");
         adapter.addFragment(new ImageFragment(R.drawable.image3), "Tab 3");
         viewPager.setAdapter(adapter);
+    }
+
+    public class SplashActivity extends AppCompatActivity {
+
+        // Duration of splash screen in milliseconds
+        private static final int SPLASH_DURATION = 3000;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_splash);
+
+            // Delay for SPLASH_DURATION milliseconds and then start main activity
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Start main activity
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }, SPLASH_DURATION);
+        }
     }
 }
