@@ -1,7 +1,7 @@
 # Mini Android Project by <br> Team <h2>BUG_BUSTERS</h2>
 - V RAHUL
 - TEJASWI R RAO
-- SAGAR D K
+- SAGAR D K(c)
 - GHANASHYAM M
 - SAINATH LAL R
 - SACHIN R
